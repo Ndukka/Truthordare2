@@ -1,0 +1,166 @@
+import random
+
+print("Welcome to Phil's Truth OR Dare Game. Strictly 18+. Wish to continue? Type: 1, Otherwise, Type 0 to quit")
+while True:
+    try:
+        choose = int(input("Type 1 to play or 0 to quit:"))
+        if choose == 1:
+            pass
+        elif choose == 0:
+            print("You have requested to quit the game; Have a nice day")
+            break
+        else:
+            ValueError
+            print("You have entered something invalid character, please enter either 1 or 0")
+            continue
+    except ValueError:
+        print("You have entered an invalid character, please enter either 1 or 0")
+        continue
+        
+    
+
+
+        
+      
+    p1_name = input("First Player, Please tell us your name:")
+    print("Hello", p1_name, "welccome to the game")
+    while True:
+        p1_choice = input("Kindly choose between Truth or Dare:")
+        if p1_choice == 'Truth':
+            print(p1_name, "chose the", p1_choice, "Option.")
+            break
+        elif p1_choice == 'Dare':
+            print(p1_name, "chose the", p1_choice, "Option.")
+            break
+        else:
+            print("Please choose Truth or Dare only. Case-sensitive")
+            continue
+    if (p1_name, p1_choice) == (p1_name, "Truth"):
+        def truthordarequestions():  
+            questions_dict = {1: "What is your biggest turn off?", 2: "What is the largest age gap between you and your sexual partners?",
+                3: "Does size really matter?",
+                4: "Who was your worst sexual partner and why?",
+                5: "Have you ever faked an orgasm?",
+                6: "Have you ever been caught in action? If so, by who?",
+                7: "If you could only ever do one position for the rest of your life, which one would it be and why?",
+                8: "What is the most embarrassing thing that has happened to you during sex?",
+                9: "Where is the riskiest place you have done it?",
+                10: "Have you ever filmed a tape?",
+                11: "What is your biggest turn on?",
+                12: "Do you have any fetishes?",
+                13: "Do you like loud or silent people in bed?",
+                14: "What is your favourite song when it comes to action in the bedroom?",
+                15: "What is your maddest one-night stand story?"
+            }
+            random_question_key = random.choice(list(questions_dict.keys()))  
+            print(questions_dict[random_question_key])
+            responseis = input("Your response here:")
+            print(p1_name, "replied:", responseis)
+            return questions_dict[random_question_key]
+            
+    
+        truthordarequestions()
+        
+       
+                
+            
+            
+    elif (p1_name, p1_choice) == (p1_name, "Dare"):
+        def darequestions():  
+            darequestions_dict = {
+                1: "Send your ex a message saying you miss them.",
+                2: "Make eye contact with the person to your right and moan for 10 seconds.",
+                3: "Ask a stranger for advice on a strange rash you have recently developed.",
+                4: "Make your orgasm face at the next stranger you see until they make eye contact with you.",
+                5: "Seductively eat a banana whilst locking eyes with the person to your left.",
+                6: "Send one of your parents a sext and do not reply to them for one hour.",
+                7: "Pass your phone to the person on your left and let them post a sexual status to your Facebook.",
+                8: "Perform a seductive dance in front of the group.",
+                9: "Pick up the nearest object to you and demonstrate how to put on protection.",
+                10: "Close your eyes, pick a random phone contact and leave them a dirty voicemail.",
+                11: "Drop an ice cube in your pants.",
+                12: "Google the dirtiest thing you can think of and show it to the person next to you.",
+                13: "FaceTime your most recent contact, burp, then hang up.",
+                14: "Smell everyones armpits and rank them from best to worst.",
+                15: "Tell us the one bedtime secret no one knows about you."
+            }
+            random_question_keys = random.choice(list(darequestions_dict.keys()))  
+            print(darequestions_dict[random_question_keys])
+            responseis = input("Your response here:")
+            print(p1_name, "replied:", responseis)
+            return darequestions_dict[random_question_keys]
+        darequestions()
+    else:
+        print("Kindly note that this game is case_sensitive or you spelt one of the words incorrectly. Please, try again")
+        continue
+            
+    p2_name = input("Second Player, Please tell us your name:")
+    while True:
+        p2_choice = input("Kindly choose between Truth or Dare:")
+        if p2_choice == 'Truth':
+            print(p2_name, "chose the", p2_choice, "Option.")
+            break
+        elif p2_choice == 'Dare':
+            print(p2_name, "chose the", p2_choice, "Option.")
+            break
+        else:
+            print("Please choose Truth or Dare only. Case-sensitive")
+            continue
+    if (p2_name, p2_choice) == (p2_name, "Truth"):
+        def p2truthordarequestions():  
+            p2questions_dict = {1: "What is your biggest turn off?", 2: "What is the largest age gap between you and your sexual partners?",
+                3: "Does size really matter?",
+                4: "Who was your worst sexual partner and why?",
+                5: "Have you ever faked an orgasm?",
+                6: "Have you ever been caught in action? If so, by who?",
+                7: "If you could only ever do one position for the rest of your life, which one would it be and why?",
+                8: "What is the most embarrassing thing that has happened to you during sex?",
+                9: "Where is the riskiest place you have done it?",
+                10: "Have you ever filmed a tape?",
+                11: "What is your biggest turn on?",
+                12: "Do you have any fetishes?",
+                13: "Do you like loud or silent people in bed?",
+                14: "What is your favourite song when it comes to action in the bedroom?",
+                15: "What is your maddest one-night stand story?"
+            }
+            p2random_question_key = random.choice(list(p2questions_dict.keys()))  
+            print(p2questions_dict[p2random_question_key])
+            p2responseis = input("Your response here:")
+            print(p2_name, "replied:", p2responseis)
+            return p2questions_dict[p2random_question_key]
+            
+    
+        p2truthordarequestions()
+        
+       
+                
+            
+            
+    elif (p2_name, p2_choice) == (p2_name, "Dare"):
+        def p2darequestions():  
+            p2darequestions_dict = {
+                1: "Send your ex a message saying you miss them.",
+                2: "Make eye contact with the person to your right and moan for 10 seconds.",
+                3: "Ask a stranger for advice on a strange rash you have recently developed.",
+                4: "Make your orgasm face at the next stranger you see until they make eye contact with you.",
+                5: "Seductively eat a banana whilst locking eyes with the person to your left.",
+                6: "Send one of your parents a sext and do not reply to them for one hour.",
+                7: "Pass your phone to the person on your left and let them post a sexual status to your Facebook.",
+                8: "Perform a seductive dance in front of the group.",
+                9: "Pick up the nearest object to you and demonstrate how to put on protection.",
+                10: "Close your eyes, pick a random phone contact and leave them a dirty voicemail.",
+                11: "Drop an ice cube in your pants.",
+                12: "Google the dirtiest thing you can think of and show it to the person next to you.",
+                13: "FaceTime your most recent contact, burp, then hang up.",
+                14: "Smell everyones armpits and rank them from best to worst.",
+                15: "Tell us the one bedtime secret no one knows about you."
+            }
+            p2random_question_keys = random.choice(list(p2darequestions_dict.keys()))  
+            print(p2darequestions_dict[p2random_question_keys])
+            p2responseis = input("Your response here:")
+            print(p2_name, "replied:", p2responseis)
+            return p2darequestions_dict[p2random_question_keys]
+        p2darequestions()
+    else:
+        print("Kindly note that this game is case_sensitive or you spelt one of the words incorrectly. Please, try again")
+    print("want to play again?")
